@@ -1,0 +1,248 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Color Palette: greater number is darker color */
+/*==============================
+    Styling for header
+==============================*/
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  width: 30%;
+}
+
+header h1 img#logo {
+  width: 100%;
+  height: auto;
+}
+
+header nav {
+  width: 70%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  line-height: 120%;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: black;
+  padding: 7px;
+  border-bottom: solid 1px black;
+}
+
+header nav a:hover {
+  cursor: pointer;
+  color: #BE0030;
+  border-bottom: solid 1px #BE0030;
+}
+
+/*==============================
+    Styling for Main Contents
+==============================*/
+h2 {
+  font-size: 2rem;
+  background-color: #A97C00;
+  color: white;
+  margin: 0 0 20px;
+  padding: 20px 30px;
+}
+
+/* Styling for Main Section */
+main {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main h3 {
+  color: #9A0027;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+main div.mainContents {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main div.mainContents div.featuredImage {
+  text-align: center;
+}
+
+main div.mainContents div.featuredImage img {
+  width: 100%;
+  height: auto;
+}
+
+main div.mainContents p {
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  margin: 0 0 35px;
+}
+
+main div#homeButton {
+  margin: 0 auto;
+  text-align: center;
+}
+
+main div#homeButton a {
+  display: inline-block;
+  background-color: #9A0027;
+  border: 1px #9A0027 solid;
+  color: white;
+  text-decoration: none;
+  padding: 10px 40px;
+  margin-bottom: 40px;
+}
+
+main div#homeButton a:hover {
+  color: #9A0027;
+  background-color: white;
+  cursor: pointer;
+  border: 1px #9A0027 solid;
+}
+
+/* Styling for Contact Form */
+form#contactForm {
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form#contactForm table {
+  width: 100%;
+}
+
+form#contactForm table td {
+  vertical-align: top;
+}
+
+form#contactForm table td:first-child {
+  text-align: right;
+  padding-right: 30px;
+  width: 30%;
+}
+
+form#contactForm table input {
+  width: 70%;
+  margin-bottom: 5px;
+}
+
+form#contactForm table textarea {
+  width: 70%;
+  height: 50px;
+}
+
+form#contactForm div#submitButton {
+  margin: 30px auto 40px;
+  text-align: center;
+}
+
+form#contactForm div#submitButton button {
+  background-color: #FFC832;
+  padding: 10px 40px;
+  font-size: 1rem;
+}
+
+form#contactForm div#submitButton button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+/*==============================
+    Styling for footer
+==============================*/
+footer {
+  background-color: #100457;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p#address {
+  margin: 0;
+}
+
+footer p#copyright {
+  margin: 30px 0 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  /*==============================
+    Styling for header
+==============================*/
+  header h1 {
+    width: 20%;
+  }
+  header h1 img#logo {
+    width: 100%;
+    height: auto;
+  }
+  header nav {
+    width: 80%;
+  }
+  header nav a {
+    font-size: 1.7rem;
+  }
+  /*==============================
+    Styling for Main Contents
+==============================*/
+  /* Styling for Main Section */
+  main h2 {
+    font-size: 3rem;
+    padding-left: 80px;
+  }
+  main div#ourStory.mainContents div.featuredImage {
+    float: left;
+    width: 40%;
+    margin: 0 30px 10px 0;
+  }
+  main div#ourStory.mainContents h3 {
+    font-size: 2rem;
+  }
+  main div#ourStory.mainContents p {
+    font-size: 1.5rem;
+  }
+  /* Styling for Our Specialty */
+  div#ourSpecialty.mainContents {
+    display: flex;
+  }
+  div#ourSpecialty.mainContents div#burningShrimp {
+    margin: 0 40px 0;
+  }
+  /* Styling for Contact Form */
+  form#contactForm {
+    font-size: 1.5rem;
+    width: 800px;
+  }
+  form#contactForm table input {
+    width: 70%;
+  }
+  form#contactForm table textarea {
+    width: 70%;
+    height: 100px;
+  }
+  /*==============================
+    Styling for footer
+==============================*/
+  footer {
+    font-size: 1.3rem;
+  }
+  footer p#copyright {
+    margin-top: 60px;
+  }
+}

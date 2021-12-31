@@ -1,0 +1,11 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@import "modules/variables";
+@import "modules/mobile";
+
+/* Media query for desktop */
+@media screen and (min-width: 1000px) {
+  @import "modules/desktop";
+}
